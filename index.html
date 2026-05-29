@@ -13,10 +13,10 @@
         body { font-family: 'Montserrat', sans-serif; }
         .font-luxury { font-family: 'Cinzel', serif; }
         
-        /* Efeito de iluminação dourada na linha curva (igual à referência) */
+        /* Linha curva com iluminação dourada idêntica à referência */
         .gold-curve {
-            border-right: 3px solid #D4AF37;
-            box-shadow: 10px 0px 30px rgba(212, 175, 55, 0.4);
+            border-left: 3px solid #D4AF37;
+            box-shadow: -10px 0px 30px rgba(212, 175, 55, 0.3);
         }
     </style>
 </head>
@@ -63,12 +63,12 @@
                 </div>
             </div>
 
-            <div class="md:col-span-6 h-full relative flex justify-end items-stretch self-stretch min-h-[450px] md:min-h-[75vh]">
+            <div class="md:col-span-6 h-full relative flex justify-center items-center min-h-[450px] md:min-h-[70vh]">
                 
-                <div class="absolute inset-y-0 left-0 right-1/3 bg-[#F4EFEA] rounded-l-[100px] md:rounded-l-[200px] gold-curve -z-10 transform translate-x-4 md:translate-x-12"></div>
+                <div class="absolute inset-y-0 right-0 left-12 bg-[#F4EFEA] rounded-l-[120px] md:rounded-l-[240px] gold-curve -z-10 transform translate-x-6"></div>
                 
-                <div class="w-full md:w-[90%] h-full min-h-[450px] md:min-h-[75vh] overflow-hidden shadow-xl md:shadow-2xl z-10">
-                    <img src="https://images2.imgbox.com/ce/0c/bK97jK1l_o.jpg" alt="Jéssica Pissolato" class="w-full h-full object-cover object-center md:object-[center_20%] scale-100 hover:scale-105 transition duration-700">
+                <div class="w-[85%] md:w-[80%] aspect-[3/4] overflow-hidden shadow-2xl z-10 border border-stone-200/50 bg-stone-100">
+                    <img src="img/foto-jessica.jpeg.jpeg" alt="Jéssica Pissolato" class="w-full h-full object-cover object-center scale-100 hover:scale-105 transition duration-700 block">
                 </div>
             </div>
 
@@ -146,10 +146,7 @@
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-16 items-center">
             
             <div class="md:col-span-6 space-y-6">
-                <div class="text-left">
-                    <div class="text-2xl font-luxury tracking-[0.2em] text-white">JP</div>
-                    <span class="text-[9px] block font-sans tracking-[0.4em] uppercase font-light text-amber-500/80 mt-1">Estética Avançada</span>
-                </div>
+                <div class="text-2xl font-luxury tracking-[0.2em] text-white">JP</div>
                 <p class="text-stone-400 text-xs font-light leading-relaxed max-w-md">
                     Agende o seu momento de cuidado em um espaço privativo e confortável preparado exclusivamente para oferecer segurança e excelência.
                 </p>
