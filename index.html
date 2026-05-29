@@ -7,176 +7,172 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <style>
         body { font-family: 'Montserrat', sans-serif; }
         .font-luxury { font-family: 'Cinzel', serif; }
         
-        /* Gradiente Ouro Metálico Premium */
-        .text-gold-gradient {
-            background: linear-gradient(135deg, #ECC98A 0%, #CFA55C 50%, #AE843C 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .bg-gold-gradient {
-            background: linear-gradient(135deg, #ECC98A 0%, #CFA55C 50%, #AE843C 100%);
+        /* Efeito de iluminação dourada na linha curva (igual à referência) */
+        .gold-curve {
+            border-right: 3px solid #D4AF37;
+            box-shadow: 10px 0px 30px rgba(212, 175, 55, 0.4);
         }
     </style>
 </head>
-<body class="bg-[#1F0D11] text-stone-200 antialiased tracking-wide">
+<body class="bg-[#FBF9F6] text-stone-800 antialiased tracking-wide">
 
-    <header class="bg-[#1F0D11]/80 backdrop-blur-lg sticky top-0 z-50 border-b border-[#CFA55C]/15">
+    <header class="bg-[#FBF9F6]/80 backdrop-blur-md sticky top-0 z-50 border-b border-stone-200/40">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
             <div class="text-left">
-                <div class="text-2xl font-luxury font-semibold tracking-[0.25em] text-gold-gradient">JP</div>
-                <span class="text-[9px] block font-sans tracking-[0.4em] uppercase font-light text-[#ECC98A]/60 mt-1">Estética Avançada</span>
+                <div class="text-2xl font-luxury font-medium tracking-[0.2em] text-stone-900">JP</div>
+                <span class="text-[9px] block font-sans tracking-[0.4em] uppercase font-light text-amber-700/80 mt-0.5">Estética Avançada</span>
             </div>
-            <nav class="hidden md:flex space-x-12 text-xs font-medium tracking-[0.2em] uppercase text-stone-300">
-                <a href="#inicio" class="hover:text-[#ECC98A] transition duration-300">Início</a>
-                <a href="#clinica" class="hover:text-[#ECC98A] transition duration-300">A Clínica</a>
-                <a href="#procedimentos" class="hover:text-[#ECC98A] transition duration-300">Procedimentos</a>
-                <a href="#contato" class="hover:text-[#ECC98A] transition duration-300">Contato</a>
+            <nav class="hidden md:flex space-x-12 text-xs font-medium tracking-[0.2em] uppercase text-stone-500">
+                <a href="#inicio" class="hover:text-amber-700 transition duration-300">Início</a>
+                <a href="#clinica" class="hover:text-amber-700 transition duration-300">A Clínica</a>
+                <a href="#procedimentos" class="hover:text-amber-700 transition duration-300">Procedimentos</a>
+                <a href="#contato" class="hover:text-amber-700 transition duration-300">Contato</a>
             </nav>
             <div>
-                <a href="https://wa.me/5541999999999" target="_blank" class="bg-gold-gradient hover:opacity-90 text-[#1F0D11] text-[10px] font-bold px-6 py-3 rounded-none tracking-[0.2em] uppercase transition duration-300 shadow-lg block">
+                <a href="https://wa.me/5541999999999" target="_blank" class="bg-stone-900 hover:bg-amber-700 text-white text-[10px] font-semibold px-6 py-3 tracking-[0.2em] uppercase transition duration-300 shadow-sm">
                     Agendar Consulta
                 </a>
             </div>
         </div>
     </header>
 
-    <section id="inicio" class="relative bg-[#1F0D11] pt-12 pb-24 overflow-hidden">
-        <div class="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(#CFA55C_1px,transparent_1px)] [background-size:16px_16px]"></div>
-        
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center relative z-10">
+    <section id="inicio" class="relative bg-[#FBF9F6] min-h-[85vh] flex items-center overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 w-full grid md:grid-cols-12 items-center gap-12 pt-8 pb-16 md:py-0">
             
-            <div class="md:col-span-6 space-y-8 order-2 md:order-1">
-                <div class="space-y-2">
-                    <span class="text-[11px] font-medium tracking-[0.3em] text-[#ECC98A] uppercase block">Realçando sua beleza natural</span>
-                    <div class="w-12 h-[1px] bg-[#CFA55C]/40"></div>
+            <div class="md:col-span-6 space-y-8 relative z-10">
+                <div class="space-y-3">
+                    <span class="text-[11px] font-medium tracking-[0.3em] text-amber-700 uppercase block">Beleza e bem-estar</span>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-luxury font-light leading-[1.15] text-stone-900 tracking-wide">
+                        Estética Avançada com <br>
+                        <span class="italic text-stone-600 font-normal">Excelência</span> em cada detalhe
+                    </h1>
                 </div>
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-luxury font-light leading-[1.2] text-white tracking-wide">
-                    Estética Avançada com <br>
-                    <span class="text-gold-gradient font-normal italic">Essência & Cuidado</span>
-                </h1>
-                <p class="text-stone-300 font-light text-sm leading-relaxed max-w-md">
-                    Tratamentos personalizados liderados por Jéssica Pissolato, combinando ciência, saúde e alta tecnologia para o seu bem-estar.
+                <p class="text-stone-500 font-light text-sm md:text-base leading-relaxed max-w-xl">
+                    Tratamentos personalizados e humanizados liderados por Jéssica Pissolato. Combinamos protocolos de alta tecnologia ao cuidado individualizado para realçar a sua essência com máxima naturalidade.
                 </p>
-                <div class="pt-4">
-                    <a href="#procedimentos" class="border border-[#CFA55C] text-[#ECC98A] hover:bg-gold-gradient hover:text-[#1F0D11] px-8 py-4 text-xs font-medium tracking-[0.2em] uppercase transition duration-500">
-                        Explorar Tratamentos
+                <div class="pt-2">
+                    <a href="#procedimentos" class="border-b-2 border-amber-700/60 pb-1.5 text-xs font-semibold tracking-[0.2em] uppercase text-stone-900 hover:text-amber-700 hover:border-amber-700 transition duration-300">
+                        Nossos Procedimentos &rarr;
                     </a>
                 </div>
             </div>
 
-            <div class="md:col-span-6 relative flex justify-center order-1 md:order-2">
-                <div class="absolute inset-0 bg-[#CFA55C]/5 rounded-t-[200px] blur-xl transform translate-y-4 w-[85%] mx-auto"></div>
+            <div class="md:col-span-6 h-full relative flex justify-end items-stretch self-stretch min-h-[450px] md:min-h-[75vh]">
                 
-                <div class="w-[85%] aspect-[3/4] rounded-t-[200px] border border-[#CFA55C]/40 p-3 bg-[#1F0D11] shadow-2xl">
-                    <div class="w-full h-full rounded-t-[190px] overflow-hidden bg-[#17090C] relative">
-                        <img src="https://images2.imgbox.com/00/60/G7g6mZ2g_o.jpg" alt="Jéssica Pissolato" class="w-full h-full object-cover object-center scale-100 hover:scale-105 transition duration-700 block">
-                    </div>
+                <div class="absolute inset-y-0 left-0 right-1/3 bg-[#F4EFEA] rounded-l-[100px] md:rounded-l-[200px] gold-curve -z-10 transform translate-x-4 md:translate-x-12"></div>
+                
+                <div class="w-full md:w-[90%] h-full min-h-[450px] md:min-h-[75vh] overflow-hidden shadow-xl md:shadow-2xl z-10">
+                    <img src="https://images2.imgbox.com/ce/0c/bK97jK1l_o.jpg" alt="Jéssica Pissolato" class="w-full h-full object-cover object-center md:object-[center_20%] scale-100 hover:scale-105 transition duration-700">
                 </div>
             </div>
 
         </div>
     </section>
 
-    <section class="bg-[#17090C] py-14 border-y border-[#CFA55C]/15">
+    <section class="bg-[#F4EFEA]/60 py-14 border-y border-stone-200/40">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-                <p class="text-2xl md:text-3xl font-luxury text-gold-gradient font-semibold">1000+</p>
-                <p class="text-[10px] text-stone-400 uppercase tracking-widest mt-1">Clientes Satisfeitas</p>
+                <p class="text-2xl md:text-3xl font-luxury text-stone-900">1000+</p>
+                <p class="text-[10px] text-stone-400 uppercase tracking-widest mt-1">Pacientes Atendidas</p>
             </div>
             <div>
-                <p class="text-2xl md:text-3xl font-luxury text-gold-gradient font-semibold">5+</p>
-                <p class="text-[10px] text-stone-400 uppercase tracking-widest mt-1">Anos de Experiência</p>
+                <p class="text-2xl md:text-3xl font-luxury text-stone-900">5+</p>
+                <p class="text-[10px] text-stone-400 uppercase tracking-widest mt-1">Anos de Trajetória</p>
             </div>
             <div>
-                <p class="text-2xl md:text-3xl font-luxury text-gold-gradient font-semibold">20+</p>
-                <p class="text-[10px] text-stone-400 uppercase tracking-widest mt-1">Especializações</p>
+                <p class="text-2xl md:text-3xl font-luxury text-stone-900">20+</p>
+                <p class="text-[10px] text-stone-400 uppercase tracking-widest mt-1">Certificações Acadêmicas</p>
             </div>
             <div>
-                <p class="text-2xl md:text-3xl font-luxury text-gold-gradient font-semibold">Premium</p>
-                <p class="text-[10px] text-stone-400 uppercase tracking-widest mt-1">Padrão de Atendimento</p>
+                <p class="text-2xl md:text-3xl font-luxury text-stone-900">Premium</p>
+                <p class="text-[10px] text-stone-400 uppercase tracking-widest mt-1">Experiência Exclusiva</p>
             </div>
         </div>
     </section>
 
-    <section id="clinica" class="py-28 bg-[#1F0D11] relative">
-        <div class="max-w-3xl mx-auto px-6 text-center space-y-8">
-            <span class="text-[11px] font-medium tracking-[0.3em] text-[#ECC98A] uppercase block">Conceito JP</span>
-            <h2 class="text-3xl font-luxury text-white tracking-wide">A Arte de Lapidar Traços com Naturalidade</h2>
-            <div class="w-16 h-[1px] bg-[#CFA55C] mx-auto"></div>
-            <p class="text-stone-300 font-light leading-loose text-sm md:text-base">
-                Na JP Estética Avançada, entendemos que o verdadeiro luxo está na sutileza. Cada procedimento é planejado meticulosamente respeitando a anatomia individual e gerenciando o envelhecimento de forma elegante, sem exageros. Nosso objetivo é fazer com que você olhe no espelho e reconheça sua melhor versão.
+    <section id="clinica" class="py-28 bg-white">
+        <div class="max-w-4xl mx-auto px-6 text-center space-y-8">
+            <span class="text-[11px] font-medium tracking-[0.3em] text-amber-700 uppercase block">A Clínica</span>
+            <h2 class="text-3xl font-luxury text-stone-900 tracking-wide">Gerenciamento Estético Inteligente</h2>
+            <div class="w-12 h-[1px] bg-amber-700 mx-auto"></div>
+            <p class="text-stone-500 font-light leading-loose text-sm md:text-base max-w-3xl mx-auto">
+                Acreditamos que cada traço conta uma história única. Na nossa clínica, priorizamos consultas detalhadas e avaliações profundas para desenvolver planejamentos personalizados. Aqui, unimos a ciência médica estética à sensibilidade artística para entregar resultados elegantes, refinados e em perfeita harmonia com quem você é.
             </p>
         </div>
     </section>
 
-    <section id="procedimentos" class="py-24 bg-[#17090C] border-t border-[#CFA55C]/10">
+    <section id="procedimentos" class="py-24 bg-[#FBF9F6] border-t border-stone-200/30">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center space-y-3 mb-20">
-                <span class="text-[11px] font-medium tracking-[0.3em] text-[#ECC98A] uppercase block">O Portfólio</span>
-                <h2 class="text-3xl font-luxury text-white tracking-wide">Soluções Avançadas</h2>
+                <span class="text-[11px] font-medium tracking-[0.3em] text-amber-700 uppercase block">Especialidades</span>
+                <h2 class="text-3xl font-luxury text-stone-900 tracking-wide">Nossos Procedimentos</h2>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-12">
-                <div class="bg-[#1F0D11] border border-[#CFA55C]/10 p-10 hover:border-[#CFA55C]/40 transition duration-500 group space-y-6 shadow-xl">
-                    <p class="text-xs font-luxury text-[#ECC98A]/60 tracking-widest group-hover:text-[#ECC98A] transition">I / FACIAL</p>
-                    <h3 class="text-xl font-luxury font-medium text-white">Preenchedores & Toxinas</h3>
-                    <p class="text-xs font-light text-stone-300 leading-relaxed">
-                        Gerenciamento de linhas de expressão, harmonização sutil e reposição de volumes perdidos com foco em um visual descansado.
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-10 hover:shadow-lg transition duration-500 border border-stone-200/40 space-y-5">
+                    <div class="w-8 h-8 rounded-full bg-[#F4EFEA] flex items-center justify-center text-amber-800 text-xs font-semibold">01</div>
+                    <h3 class="text-lg font-luxury text-stone-900">Harmonização Facial</h3>
+                    <p class="text-xs font-light text-stone-500 leading-relaxed">
+                        Uso estratégico de preenchedores estruturais e toxina botulínica para suavizar linhas de expressão e realçar contornos naturais.
                     </p>
                 </div>
-                <div class="bg-[#1F0D11] border border-[#CFA55C]/10 p-10 hover:border-[#CFA55C]/40 transition duration-500 group space-y-6 shadow-xl">
-                    <p class="text-xs font-luxury text-[#ECC98A]/60 tracking-widest group-hover:text-[#ECC98A] transition">II / ESTIMULAÇÃO</p>
-                    <h3 class="text-xl font-luxury font-medium text-white">Bioestimuladores</h3>
-                    <p class="text-xs font-light text-stone-300 leading-relaxed">
-                        Ativação natural da produção de colágeno do seu próprio organismo para devolver a firmeza, sustentação e espessura da pele.
+
+                <div class="bg-white p-10 hover:shadow-lg transition duration-500 border border-stone-200/40 space-y-5">
+                    <div class="w-8 h-8 rounded-full bg-[#F4EFEA] flex items-center justify-center text-amber-800 text-xs font-semibold">02</div>
+                    <h3 class="text-lg font-luxury text-stone-900">Estímulo de Colágeno</h3>
+                    <p class="text-xs font-light text-stone-500 leading-relaxed">
+                        Tratamentos com bioestimuladores injetáveis focados na reestruturação da firmeza da derme, tratando a flacidez de dentro para fora.
                     </p>
                 </div>
-                <div class="bg-[#1F0D11] border border-[#CFA55C]/10 p-10 hover:border-[#CFA55C]/40 transition duration-500 group space-y-6 shadow-xl">
-                    <p class="text-xs font-luxury text-[#ECC98A]/60 tracking-widest group-hover:text-[#ECC98A] transition">III / CORPORAL</p>
-                    <h3 class="text-xl font-luxury font-medium text-white">Contorno Corporal</h3>
-                    <p class="text-xs font-light text-stone-300 leading-relaxed">
-                        Protocolos injetáveis e de alta tecnologia voltados para a redução de gordura localizada, tratamento de flacidez e celulites.
+
+                <div class="bg-white p-10 hover:shadow-lg transition duration-500 border border-stone-200/40 space-y-5">
+                    <div class="w-8 h-8 rounded-full bg-[#F4EFEA] flex items-center justify-center text-amber-800 text-xs font-semibold">03</div>
+                    <h3 class="text-lg font-luxury text-stone-900">Protocolos Corporais</h3>
+                    <p class="text-xs font-light text-stone-500 leading-relaxed">
+                        Soluções avançadas focadas na redução de gordura localizada, melhora da textura da pele e contorno corporal harmonioso.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contato" class="py-24 bg-[#140608] text-stone-200 border-t border-[#CFA55C]/15">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-16">
+    <section id="contato" class="py-24 bg-stone-900 text-stone-300">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-16 items-center">
+            
             <div class="md:col-span-6 space-y-6">
                 <div class="text-left">
-                    <div class="text-3xl font-luxury font-semibold tracking-[0.2em] text-gold-gradient">JP</div>
-                    <span class="text-[9px] block font-sans tracking-[0.4em] uppercase font-light text-stone-500 mt-1">Estética Avançada</span>
+                    <div class="text-2xl font-luxury tracking-[0.2em] text-white">JP</div>
+                    <span class="text-[9px] block font-sans tracking-[0.4em] uppercase font-light text-amber-500/80 mt-1">Estética Avançada</span>
                 </div>
-                <p class="text-stone-400 text-xs font-light leading-relaxed max-w-sm">
-                    Inicie sua jornada de cuidados em um ambiente privativo, seguro e acolhedor criado exclusivamente para o seu bem-estar.
+                <p class="text-stone-400 text-xs font-light leading-relaxed max-w-md">
+                    Agende o seu momento de cuidado em um espaço privativo e confortável preparado exclusivamente para oferecer segurança e excelência.
                 </p>
-                <div class="space-y-3 text-xs font-light text-stone-400 pt-4">
-                    <p><strong class="text-[#ECC98A] font-medium tracking-wider uppercase">Instagram:</strong> @jessicapissolato.estetica</p>
-                    <p><strong class="text-[#ECC98A] font-medium tracking-wider uppercase">Localização:</strong> Pinhais - PR</p>
+                <div class="space-y-3 text-xs font-light text-stone-400 pt-2">
+                    <p><strong class="text-white font-medium tracking-wider uppercase block mb-0.5">Instagram</strong> @jessicapissolato.estetica</p>
+                    <p><strong class="text-white font-medium tracking-wider uppercase block mb-0.5">Atendimento</strong> Pinhais - PR</p>
                 </div>
             </div>
 
-            <div class="md:col-span-6 flex flex-col justify-center items-start md:items-end">
-                <div class="w-full max-w-md bg-[#1F0D11]/60 p-8 border border-[#CFA55C]/10 space-y-6 shadow-2xl">
-                    <h3 class="text-lg font-luxury text-white tracking-wide">Agendamento Exclusivo</h3>
+            <div class="md:col-span-6 flex justify-end">
+                <div class="w-full max-w-md bg-stone-800/40 p-8 border border-stone-800 space-y-6">
+                    <h3 class="text-lg font-luxury text-white tracking-wide">Agendamento Institucional</h3>
                     <p class="text-xs text-stone-400 font-light leading-relaxed">
-                        Clique abaixo para falar diretamente com nosso atendimento via WhatsApp e consultar a disponibilidade da nossa agenda institucional.
+                        Converse diretamente com o nosso suporte via WhatsApp para alinhar horários disponíveis e tirar dúvidas sobre os protocolos.
                     </p>
-                    <a href="https://wa.me/5541999999999" target="_blank" class="w-full block text-center bg-gold-gradient text-[#1F0D11] font-bold text-xs py-4 tracking-[0.2em] uppercase transition duration-300 shadow-xl hover:opacity-90">
-                        Iniciar Atendimento
+                    <a href="https://wa.me/5541999999999" target="_blank" class="w-full block text-center bg-white hover:bg-amber-700 hover:text-white text-stone-950 font-semibold text-xs py-4 tracking-[0.2em] uppercase transition duration-300">
+                        Entre em contato
                     </a>
                 </div>
             </div>
+
         </div>
-        <div class="max-w-7xl mx-auto px-6 mt-20 pt-8 border-t border-stone-900/40 text-center text-[10px] text-stone-600 tracking-widest font-light uppercase">
+        <div class="max-w-7xl mx-auto px-6 mt-20 pt-8 border-t border-stone-800 text-center text-[10px] text-stone-500 tracking-widest font-light uppercase">
             &copy; 2026 JP Estética Avançada e Saúde. Todos os direitos reservados.
         </div>
     </section>
